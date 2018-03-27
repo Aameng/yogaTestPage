@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+ <meta charset="UTF-8">  
+ <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
+ <link rel="stylesheet" href="css/index.css" />
+  <script type="text/javascript" src="js/jquery.js" ></script>
+ <script type="text/javascript" src="js/index.js" ></script>
+<script>   
+//(function (doc, win) {
+//      var docEl = doc.documentElement,
+//          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+//          recalc = function () {
+//              var clientWidth = docEl.clientWidth;
+//              if (!clientWidth) return;
+//              if(clientWidth>=640){
+//                  docEl.style.fontSize = '100px';
+//              }else{
+//                  docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+//              }
+//          };
+//
+//      if (!doc.addEventListener) return;
+//      win.addEventListener(resizeEvt, recalc, false);
+//      doc.addEventListener('DOMContentLoaded', recalc, false);
+//  })(document, window);
+</script> 
+<title>标题</title> 
+</head>
+<body>
+	<header class="topFixed">
+		<section class="inWrap">
+			<p class="yogaFont">Enjoyce Yoga</p>
+			<div class="topIcon">
+				<a class="homeIcon" href="index.html"></a>
+				<a  class="menuIcon"></a>
+			</div>
+		</section>
+	</header>
+	<div class="wrap">
+		 <section class="content">
+		 	  <div class="mybuy mybooking">
+		 	  	  <h4 class="titleFont">我的預約</h4>
+		 	  	  <div class="container">
+		 	  	  	   <h3 class="titleFont2">你現有<span>2</span>條預約記錄</h3>
+		 	  	  	   <div class="row"> 
+		 	  	  	   	  <div class="rowTop"><p>預約時間：2017-12-07 17:35:27</p></div>
+		 	  	  	   	  <div class="rowContent">
+		 	  	  	   	  	<p>Equipment Yoga 工具瑜伽</p>
+		 	  	  	   	  	<p>上堂時間： 2017-12-07  12:30 - 13:30</p>
+		 	  	  	   	  </div> 
+		 	  	  	   	  <div class="rowBottom">
+		 	  	  	   	  	<div class="price">
+			 	  	  	   	  	<span>導師：Yen</span>
+		 	  	  	   	  	</div>		 	  	  	   	  	
+		 	  	  	   	  	<button class="cancelButton">取消</button>
+		 	  	  	   	  	<!--<button class="checkButton">查看</button>-->
+		 	  	  	   	  </div>
+		 	  	  	   </div>
+		 	  	  	   	<div class="row"> 
+		 	  	  	   	  <div class="rowTop"><p>預約時間：2017-12-07 16:13:19</p></div>
+		 	  	  	   	  <div class="rowContent">
+		 	  	  	   	  	<p>瑜伽</p>
+		 	  	  	   	  	<p>上堂時間： 2017-12-07 12:30 - 13:30</p>
+		 	  	  	   	  </div> 
+		 	  	        <div class="rowBottom">
+		 	  	  	   	  	<div class="price">
+			 	  	  	   	  	<span>導師：Yen</span>
+		 	  	  	   	  	</div>		 	  	  	   	  	
+		 	  	  	   	  	<button class="cancelButton">取消</button>
+		 	  	  	   	  <!--	<button class="checkButton">查看</button>-->
+		 	  	  	   	</div>
+		 	  	  	   </div>
+		 	  	  	   
+		 	  	  </div>
+		 	  </div>
+		 </section>
+		 <section class="hideMenu">
+		 	<ul>
+		 		<li><a href="classes.html">Classes</a></li>
+		 		<li><a href="coming.html">Instructors</a></li>
+		 		<li><a href="coming.html">Locations</a></li>
+		 		<li><a href="booking.html">Schedule</a></li>
+		 		<li><a href="ticket.html">Pricing</a></li>
+		 	</ul>
+		 	<div class="colsePanel"><span class="closeIcon"></span></div>	
+		 </section>
+	</div>	
+	<footer class="bottomFixed">
+		<section class="inWrap">
+			<ul>
+				<li><a class="memberIcon" href="member.html"><img src="img/member.png"></a></li>
+				<li><a class="yogaIcon" href="Login.html"><img src="img/yoga.png"></a></li>
+				<li><a class="contactIcon" href="coming.html"><img src="img/contact1.png"></a></li>
+			</ul>
+		</section>
+	</footer>
+</body>
+</html>
+<script>
+	$(".cancelButton").on("click touch",function(){
+		alert("取消預約");
+	});
+</script>

@@ -1,0 +1,777 @@
+
+html,body{
+    /*height: 100%;*/
+    -webkit-box-orient: vertical; 
+    overflow-y: auto;
+     overflow-x: hidden;
+   -webkit-overflow-scrolling: touch;
+}
+body {
+	padding: 0;
+    margin: 0;
+    position: relative;
+   
+}
+img{
+	display: block;
+	width: 100%;
+}
+section{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+p,ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+button{
+	cursor: pointer;
+}
+.rowBottom:after,.login .row:after,.indexPage li:after,.ticketPanel:after,.tiButton:after,.bookingTop:after,
+.row:after,.colorI:after,.detailIcon:after,.classForday:after{
+	content: "";
+	width: 0;
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+.hideMenu{
+	z-index: 2;
+    position: absolute;
+    top: 0.8rem;
+    background: white;
+    display: none;
+
+}
+.hideMenu li{
+    display: block;
+    font-size: 0.25rem;
+    font-weight: 700;
+    width: 6.4rem;
+    margin: 0.05rem 0;
+    text-align: center;
+}
+.hideMenu a{
+    width: 2.5rem;
+    display: inline-block;
+    padding: 0.18rem 0;
+    border-bottom: 1px solid beige;
+}
+.closeIcon{
+	display: block;
+	width: 0.6rem;
+	height: 0.6rem;
+	background: url(../img/close.png);
+	background-size: cover;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.colsePanel{
+	margin: 0.2rem 0 0.15rem;
+}
+.topFixed{
+	left: 0px;
+    top: 0px;
+    width: 100%;
+    display: block;
+    background: black;
+    height: 0.8rem;
+}
+.yogaFont{
+	color: white;
+    font-size: 0.28rem;
+    line-height: 0.7rem;
+    display: inline-block;
+    float: left;
+    font-weight: 700;
+}
+.topIcon{
+	float: right;
+	margin: 0.05rem;	
+}
+.topIcon a{
+	display: block;
+	width: 0.6rem;
+	height: 0.6rem;
+	float: right;
+	margin: 0 0.1rem;
+	cursor: pointer;
+}
+.homeIcon{
+	background: url(../img/home1.png);
+	background-size: cover;
+}
+.menuIcon{
+	background: url(../img/menu1.png);
+	background-size: cover;
+}
+.inWrap{
+    width: 6.2rem;
+    margin: 0 auto;
+    height: 0.7rem;
+    padding: 0.05rem 0.0rem;
+}
+.wrap{
+	width: 6.4rem;
+	margin: 0 auto;
+    /*background: url(../img/yoga2.png);*/
+	/*background: #17dcb0;*/
+	background-size:cover ;
+	background-attachment:fixed;
+	/*background-size:100% 100%;  */	
+}
+.wrap:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/yoga2.png) center 0 no-repeat;
+  background-size: cover;
+  width: 6.4rem;
+  margin: auto;
+}
+
+/*.wrap:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/yoga2.png) center 0 no-repeat;
+  background-size: cover;
+}*/
+.content{
+	/*min-height: 600px;*/
+	padding: 0.15rem 0.1rem;
+	overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+}
+.bottomFixed{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    background-color: #FFF;
+    height: 0.8rem;
+    background: black;
+    position: fixed;
+    bottom: 0
+}
+.bottomFixed .inWrap li{
+    display: block;
+    width: 2rem;
+    height: 0.7rem;
+    float: left;
+    margin-left: 0.1rem;
+}
+.bottomFixed .inWrap li:first-child{
+	    margin-left: 0rem;
+}
+.bottomFixed .inWrap li a{
+	display: block;
+    height: 0.7rem;
+    width: 0.7rem;
+    margin: 0 auto;
+}
+.bottomFixed .inWrap a img{
+    height: 0.7rem;
+    width: 0.7rem;
+    display: block;
+}
+
+
+
+/*login*/
+.becomeFont{font-size: 0.25rem;}
+.login{
+	margin-top: 0.5rem;
+}
+.login .container{
+position: relative;
+    border-radius: 8px;
+    background: #f0f8ffc2;
+    text-align: center;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    width: 5.0rem;
+    margin: 0 auto;
+}
+.login .row{
+    padding: 0.15rem 0.2rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.login label{
+    font-size: 0.33rem;
+    float: left;
+    width: 1.1rem;
+}
+.login input,.login select{
+    float: left;
+    width: 3.2rem;
+    padding: 0.14rem 0 0.14rem 0.1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.2rem;
+    height: 0.22rem;
+}
+input[type=date]{
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../img/arrow1.png) no-repeat right center transparent !important;
+    height: 0.22rem !important;
+    display: block;
+    font-size: 0.18rem !important;
+}
+select{
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../img/arrow1.png) no-repeat right center transparent !important;
+    height: 0.50rem !important;
+    display: block;
+    font-size: 0.18rem !important;
+    padding: 0 0 0 0.1rem !important;
+    width: 3.3rem !important;
+}
+.titleFont{
+    margin: 0;
+    font-size: 0.4rem;
+    color: #ff225e;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    text-shadow: 1px 1px 1px #040404;
+}
+.titleFont2{
+	margin: 0;
+    font-size: 0.18rem;
+    color: #232323;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+.loginButton{
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 2rem;
+    padding: 0.13rem 0.1rem;
+    border: none;
+    background: #E91E63;
+    border-radius: 8px;
+    font-size: 0.2rem;
+    color: white;
+}
+.login .rowButton{
+	display: block;
+}
+/*register*/
+.register .container{
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    width: 5.8rem;
+    margin: 0 auto;
+}
+.register .row{
+padding: 0.08rem 0.1rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 5.4rem;
+}
+.register label{
+	font-size: 0.26rem;
+    float: left;
+    width: 1.8rem;
+    text-align: center;
+}
+.register input, .register select{
+	margin-top: 0;
+}
+/*index*/
+.indexPage ul{}
+.indexPage li{
+	
+}
+.indexPage li a{
+    float: right;
+    display: block;
+    background: #035f578c;
+    border-radius: 0.3rem;
+    font-size: 0.35rem;
+    padding: 0.15rem 0.3rem;
+    color: white;
+    width: 2.2rem;
+    text-align: center;
+    margin: 0.1rem;
+}
+/*mybuy*/
+.mybuy .container{
+	position: relative;
+	border-radius: 8px;
+    background: #f0f8ffc2;
+    text-align: center;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+.mybuy .row{
+    font-size: 0.2rem;
+    width: 5.50rem;
+    background: #feffff;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+    color: black;
+    margin-top: 0.1rem;
+}
+.rowTop,.rowContent{
+	padding: 0.08rem 0.1rem;
+    border-bottom: 1px solid #bbbbbbb5;
+    font-size: 0.25rem;
+}
+.rowContent{
+	line-height: 0.38rem;
+}
+.rowBottom{
+	padding: 0.07rem 0.1rem;
+	font-weight: 700;
+}
+.rowTop p{
+	text-align: left;
+    font-size: 0.15rem;
+    font-weight: 700;
+}
+.price{
+	    display: inline-block;
+    width: 3rem;
+    float: left;
+    text-align: left;
+}
+.checkButton{
+	background: #1e37f1;
+    border: none;
+    width: 1rem;
+    padding: 0.06rem 0;
+    color: white;
+    border-radius: 0.05rem;
+    float: right;
+    cursor: pointer;
+}
+/*ticket*/
+.ticketPanel{
+	display: block;
+}
+.ticketPanel li{
+width: 2.8rem;
+    padding: 0.1rem;
+    background: #000000eb;
+    border-radius: 0.1rem;
+    float: left;
+    margin: 0.1rem 0.05rem;
+    color: white;
+}
+.showTime{
+	color:palevioletred !important;
+}
+.tiName{
+	height: 0.52rem;
+    display: block;
+}
+.tiDetail{
+	font-size: 0.2rem;
+	color: #f3f3f3;
+}
+.tiImg{
+	width: 2.8rem;
+    height: 1.8rem;
+    overflow: hidden;
+}
+.tiPrice{
+	float: right;
+}
+.buyIcon{
+    background: url(../img/3.png);
+    width: 0.2rem;
+    height: 0.2rem;
+    background-size: cover;
+    display: inline-block;
+    /* float: right; */
+    vertical-align: bottom;
+    margin-right: 0.05rem;
+}
+.buyButton{
+	display: block;
+    width: 1rem;
+    background: #ef2493;
+    text-align: center;
+    padding: 0.06rem 0;
+    border-radius: 0.1rem;
+    font-size: 0.15rem;
+    float: right;
+    margin-right: 0.08rem;
+    color: white;
+}
+.inIcon{
+    background: url(../img/in.png);
+    width: 0.2rem;
+    height: 0.2rem;
+    background-size: cover;
+    display: inline-block;
+    /* float: right; */
+    vertical-align: bottom;
+    margin-right: 0.05rem;
+}
+.inButton{
+	display: block;
+    width: 1rem;
+    background: #0714bd;
+    text-align: center;
+    padding: 0.06rem 0;
+    border-radius: 0.1rem;
+    font-size: 0.15rem;
+     float: right;
+}
+.tiButton{
+	padding: 0.1rem 0.05rem 0;
+}
+/*member*/
+.memberImg{
+	display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #f12e2e;
+    margin: 0 auto;
+}
+.register .memberButton{
+	width: 3.4rem;
+}
+.memberButton a{
+	font-size: 0.3rem;
+    display: block;
+    width: 1.3rem;
+    float: left;
+    background: #f72999;
+    color: white;
+    margin: 0.05rem 0.1rem;
+    padding: 0.08rem 0.1rem;
+    border-radius: 0.08rem;
+}
+.welcomefont{
+	font-size: 0.3rem;
+    font-weight: 700;
+    color: #f72999;
+    margin-top: 0.1rem;
+}
+/*booking*/
+.moring{
+	background:#d7eafa !important;}
+.afternoon{
+background:#antiquewhite !important;}
+.evening{
+	background:#eacd77 !important;}
+.booking .container{
+	background: #4a4a0b99;
+    border-radius: 0.1rem;
+    padding: 0.08rem;
+}
+.switchTime{
+	float:left;
+}
+.switchTime a{
+	display: block;
+    font-size: 0.3rem;
+    font-weight: 700;
+    float: left;
+    color: white
+}
+.pre{
+    background: url(../img/p.png);
+    width: 0.4rem;
+    height: 0.4rem;
+    background-size: cover;
+    display: inline-block;
+    margin: 0 0.1rem;
+    margin-top: 0.03rem;
+}
+.next{
+	background: url(../img/p.png);
+    width: 0.4rem;
+    height: 0.4rem;
+    background-size: cover;
+    display: inline-block;
+    margin: 0 0.1rem;
+    transform:rotate(180deg);
+}
+.timeButton{
+	float: right;
+}
+.timeButton a{
+    display: block;
+    font-size: 0.3rem;
+    margin: 0 0.05rem;
+    font-weight: 700;
+    color: white;
+    float: right;
+}
+.course{
+	padding: 0.05rem 0.3rem 0.3rem;
+}
+.courseImg{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.booking .row{
+    padding: 0.15rem 0.2rem;
+   background: antiquewhite;
+    border-radius: 0.08rem;
+    color: #444444;
+    margin: 0.1rem 0;
+    /*border: 1px solid black;*/
+}
+.courseDetail{
+    font-size: 0.2rem;
+    width: 3.4rem;
+    float: right;
+    /*background: antiquewhite;*/
+    border-radius: 0.05rem;
+    padding: 0.05rem;
+}
+.courseDetail p{
+	line-height: 0.3rem;
+}
+.courseName{
+    font-size: 0.25rem;
+    color: #fd1669;
+    display: block;
+    height: 0.6rem;
+    overflow: hidden;
+}
+.bookingButton{
+	float: right;
+    background: blue;
+    color: white;
+    padding: 0.05rem 0.25rem;
+    font-size: 0.18rem;
+    font-weight: 700;
+    border-radius: 0.05rem;
+    text-align: center;
+    margin: 0 0.05rem;
+}
+.mybooking .cancelButton{
+	background: grey;
+    border: none;
+    width: 0.85rem;
+    padding: 0.06rem 0;
+    color: white;
+    border-radius: 0.05rem;
+    float: right;
+    margin-left:0.05rem;
+    cursor: pointer;
+}
+.colorI{
+	font-size: 0.25rem;
+    width: 5rem;
+    margin: 0 auto;
+    margin-top: 0.05rem;
+}
+.colorI p{
+    width: 1.5rem;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.colorI span{
+	width: 0.2rem;
+	height: 0.2rem;
+	display: inline-block;
+	margin-right: 0.05rem;
+}
+.showWeek{
+font-size: 0.25rem;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    display: none;
+}
+.calendarIcon{
+	    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../img/calendar.png);
+    background-size: cover;
+    float: left;
+}
+#SelectDay{
+	background: white !important;
+    height: 0.3rem !important;
+    border: none;
+    padding: 0 0.1rem;
+    /* margin-right: 0.1rem; */
+    display: block;
+    border-radius: 0.05rem;
+    float: left;
+    margin-left: 0.05rem;
+    margin-top: 0.05rem;
+}
+.dayForWeek{
+	margin-top: 0.1rem;
+}
+.dayTop{
+	    background: #213b46;
+    padding: 0.07rem 0;
+}
+.dayContent{
+	position: relative;
+}
+.classForday{
+	border-bottom: 1px solid gray;
+	position: relative;
+}
+.classTime{
+    width: 1.2rem;
+    float: left;
+    background: white;
+    color: #2e2f2f;
+    height: 0.50rem;
+    padding-top: 0.2rem;
+}
+.classContent{
+width: 4.44rem;
+    float: left;
+    height: 0.5rem; 
+    background: #e8e2e2d6;
+    text-align: left;
+    font-size: 0.25rem;
+    padding: 0.1rem 0.2rem;
+    color: #313131;
+    
+}
+.classContent p{
+	 line-height: 0.25rem;
+}
+.rightIcon{
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../img/right.png);
+    background-size: cover;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.12rem;
+    
+}
+.out1{
+	background: #b5b5b5;
+}
+.out2{
+	background: #9a9898;
+}
+/*classes*/
+.classes .row{
+	padding: 0.15rem 0.2rem;
+    background: antiquewhite;
+    border-radius: 0.08rem;
+    color: #444444;
+    margin: 0.1rem 0;
+}
+.courseDetail .courseType{
+	line-height: 0.35rem;
+	font-size: 0.23rem;
+}
+.classes .courseName{
+	height: 0.4rem;
+}
+.courseDescribe{
+	display: block;
+    height: 0.45rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*classesDetail*/
+.classesDetail .container{
+    padding: 0.3rem;
+    width: 4.5rem;
+    margin: 0 auto;
+    background: #f3f3f3e6;
+    border-radius: 0.10rem;
+}
+.detailImg{
+    display: block;
+    width: 3.5rem;
+    height: 2rem;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid #4c4c10;
+}
+.detailContent{
+	font-size: 0.25rem;
+	text-align: center;
+}
+.detailType{}
+.detailDescribe{
+	font-size: 0.18rem;
+    color: #6d6d6d;
+    text-align: left;
+    margin-top: 0.10rem;
+}
+.detailName{
+	color: #ff113b;
+    line-height: 0.4rem;
+}
+.detailIcon button{
+	display: block;
+    float: left;
+    margin: 0.05rem 0.1rem;
+    border: none;
+    padding: 0.05rem 0rem;
+    border-radius: 0.1rem;
+    font-size: 0.20rem;
+    width: 1rem;
+        color: white;
+    font-weight: 700;
+}
+.detailIcon{
+	width: 2.2rem;
+	margin: 0 auto;
+	    margin-top: 0.08rem;
+}
+.backIcon{
+	background: #6d6d6d;
+}
+
+/*classbooking*/
+.classBooking .detailImg{
+	display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #4c4c10;
+}
+.classBooking .detailType {
+}
+
